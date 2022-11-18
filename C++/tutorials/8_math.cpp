@@ -14,5 +14,5 @@ int main(){
     cout<<floor(7.4)<<" "<<floor(-7.4)<<endl;
     cout<<exp(1)<<endl;
     cout<<fabs(-4.5)<<endl;
-    cout<<pow(2,3)<<endl;
+    cout<<pow(2,3)<<endl; // 2 raised to the power of 3
 }

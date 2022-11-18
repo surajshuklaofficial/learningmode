@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
     string food = "Pizza";
-    string &meal = food; // reference to fool; it is just an another name given to the food
+    string &meal = food; // reference to food; it is just an another name given to the food
 
     cout << food << endl;
     cout << meal << endl;
