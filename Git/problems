@@ -1,0 +1,2 @@
+1. Problem  : unrelated merge histories
+   Solution : git pull --allow-unrelated-histories #it merges histories of two projects that started their lives independently

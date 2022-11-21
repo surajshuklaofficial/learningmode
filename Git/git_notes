@@ -1,0 +1,193 @@
+# Types of Version Control System(VCS):
+    1. local VCS
+    2. centralised VCS
+    3. distributed VCS
+
+# github, gitlab, bitbucket --- hosting service providers which host git repos and provide GUI. Git is free but these may charge
+
+# git - distributed VCS
+      - started by linus trovalds in 2005 
+      - stores all snapshot of each changes which enables us to obtain the any snapshot at anytime and also takes less disk as it stores only changes not whole file
+
+# intializing folder as git repo
+
+    git init                               
+    
+# just created branch can be renamed by ; by default created branch is master during initialization
+
+    git branch -m <branchname> 
+
+# intial setup
+
+    git config --global user.name tigersharma
+    git config --global user.email tigersharma1000@gmail.com
+
+# to check configuration details 
+
+    git config --list
+
+# to change editor and use vim as editor
+
+    git config --global core.editor vim
+
+# to see name or email
+
+    git config user.name
+
+    git config user.email
+
+#  three stage architecture
+
+    working directory(WD)                                    staging area                                         git repo/directory
+
+
+            ------------------------------------------------->>>   
+                    staging files
+
+
+            <<<--------------------------------------------------------------------------------------------------------
+                                                checkout project
+
+
+                                                                 ------------------------------------------------------->>>
+                                                                                    commit
+
+
+
+    WD - local files and folder in the computer where we are working
+
+    staging area - files and folder ready for commit
+
+
+# to track or add files in staging area
+
+    git add --a     or      git add .        or git add -a
+
+
+# to commit added files
+
+    git commit -m "initial commit"
+
+# to skip staging area
+
+    git commit -a -m "initial commit"
+
+# to see commits 
+
+    git log 
+
+# diff in commits 
+
+    git log -p                   --- all
+    
+    git log -p -2                --- last 2 lines
+
+# customized commit output
+
+    git log --pretty=short
+
+    git log --pretty=full
+
+    git log --pretty=format:"%h --an"              --- author name and hash
+
+    git log --since=2.weeks
+
+# ignoring files in git
+
+    .gitignore
+
+
+                touchfile.log                        --- ignore only single file touchfile.log
+                *.log                                --- ignore all files with extensions log
+
+    blank folders automatically ignored
+
+# see changes between WD and Staging area
+
+    git diff
+
+
+# see changes between WD and last commit
+
+    git diff --staged
+
+# deleting a file ; deleted file staged automatically
+
+    git rm filename.ext
+
+# renaming a file ; renamed file staged automatically 
+
+    git mv filename.ext renamefile.ext
+
+# untracking tracked files
+
+    git rm --cached file.ext
+
+# to unstage a file
+
+    git restore --staged file.ext
+
+# to restore the last commit
+
+    git checkout --file.ext                      --- single file
+    git checkout -f                              --- whole WD
+
+# adding a remote repo to WD 
+
+    git remote add origin <url>             ;  origin --- url name 
+
+    git remote                              --- see url name only 
+
+    git remote -v                           --- see url name and url
+
+# push data to remote repo
+
+    git push -u origin master        ; origin --- remote repo url nickname , master --- branch at remote repo , -u is used only when first time push
+
+# alias = otherwise called = another name
+
+    git config --global alias.st status
+
+    git config --global alias.unstage 'restore --staged --'
+
+# create and move into new branch
+
+    git checkout -b <branchname>
+
+# move into another branch
+
+    git checkout <branchname>
+
+# merge another branch into master
+
+    git merge branchname                ; being in master , overwrite master with branchname files
+
+# branch management
+
+    git branch                               --- see branches
+    git branch -v                            --- see branches alongwith thier last commit
+    git branch --merged                      --- see merged branches
+    git branch --no-merged                   --- see unmerged branches
+    git branch -d <branchname>               --- delete only merged branches
+    git branch -D <branchname>               --- delete any branch
+
+# types of branches 
+
+    1. long running branches - e.g., master , development
+    2. topic branches - short lived branches , made for to tackle particular topic
+
+# delete  branch from remote 
+
+    git push -d origin <branchname>
+
+# change last commit message
+
+    git commit --amend
+
+# change address of existing url 
+
+    git remote set-url origin <new-url>
+
+# delete git repo
+
+    rm -rf .git (in linux)
