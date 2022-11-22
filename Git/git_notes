@@ -191,3 +191,11 @@
 # delete git repo
 
     rm -rf .git (in linux)
+
+# merges histories of two projects that started their lives independently
+
+    git pull --allow-unrelated-histories
+
+# created new branch on local which is not existed on cloud and pushing it for the first time
+
+    git push --set-upstream origin tempo
