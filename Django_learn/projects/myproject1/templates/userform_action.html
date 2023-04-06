@@ -1,0 +1,24 @@
+
+
+<div >
+    
+    <div >
+        <form method="post" action="{% url 'submitform' %}">
+            {% csrf_token %} <!-- only when method=post -->
+            <div>
+                <label for="">Value1</label>
+                <input type = 'text' name="num1" />
+            </div>
+
+            <div>
+                <label for="">value2</label>
+                <input type="text" name="num2" />
+            </div>
+            <div>
+                <button type="submit">Save</button>
+            </div>
+            output
+            <input type="text" value="{{output}}"/>
+        </form>
+    </div>
+</div>

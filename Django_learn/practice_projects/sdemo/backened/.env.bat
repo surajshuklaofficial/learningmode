@@ -1,0 +1,3 @@
+set CLOUD_NAME = D
+set CLOUD_API_KEY = F
+set CLOUD_API_SECRET = G
