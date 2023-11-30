@@ -1,0 +1,137 @@
+:root {
+    --primary-button: #55c4f0;
+    --secondary-button: rgb(29, 197, 29);
+}
+
+a {
+  text-decoration: none;
+}
+
+nav > ul > li {
+  list-style-type: none;
+}
+
+ul {
+  display: none;
+}
+
+header {
+  margin: 1.5rem var(--padding-x);
+  display: flex;
+  flex: 1 0 0;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  margin: 2.5rem var(--padding-x);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+main p,
+main h1 {
+  text-align: center;
+  font-weight: 400;
+}
+
+main h1 span {
+  font-weight: 700;
+}
+
+main a {
+  border-radius: 5px;
+  padding: 0.6rem 0.8rem;
+  color: white;
+  font-weight: 700;
+  background-color: var(--primary-button);
+  font-size: small;
+  text-align: center;
+}
+
+.downloads {
+  margin: 0.5rem var(--padding-x);
+  display: grid;
+  gap: 1rem;
+}
+
+.grid-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  background-color: rgb(244, 244, 244);
+  padding: 1.5rem;
+  border-radius: 3px;
+}
+
+.grid-card .language {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.grid-card a {
+  border-radius: 5px;
+  padding: 0.6rem 0.8rem;
+  color: white;
+  font-weight: 700;
+  font-size: smaller;
+}
+
+.grid-card a:first-child {
+  background-color: var(--primary-button);
+}
+
+.grid-card a:last-child {
+  background-color: var(--secondary-button);
+}
+
+
+
+/* xs */
+@media (min-width: 475px) { }
+
+/* sm */
+@media (min-width: 640px) { }
+
+/* md */
+@media (min-width: 768px) { }
+
+/* lg */
+@media (min-width: 1024px) {
+  main {
+    max-width: 1024px;
+    margin: 4rem auto;
+  }
+
+  main h1 {
+    font-size: 3rem;
+  }
+
+  main p {
+    font-size: 1.5rem;
+  }
+
+  main a {
+    font-size: medium;
+    padding: 1rem;
+  }
+
+  .downloads {
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1024px;
+    margin: auto;
+    column-gap: 2rem;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) { }
+
+/* 2xl */
+@media (min-width: 1536px) { }

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 500px;
+            width: 600px;
+            border: 2px solid black;
+            background-color: azure;
+            position: relative;
+        }
+
+        .ball {
+            border-radius: 100%;
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            animation: bouncing 1s infinite ease-out alternate-reverse 0s, 
+                        moving 6s infinite linear alternate-reverse 0s;
+        }
+
+
+        @keyframes bouncing {
+            from {
+                bottom: 0;
+            }
+            to {
+                bottom: 40%;
+            }
+        }
+
+        @keyframes moving {
+            from {
+                left: 0;
+            }
+            to {
+                left: 100%;
+                translate: -100%;
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+        <div class="ball bounce"></div>
+   </div>
+</body>
+</html>
