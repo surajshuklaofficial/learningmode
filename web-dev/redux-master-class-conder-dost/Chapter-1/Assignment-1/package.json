@@ -1,0 +1,31 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "asynckit": "^0.4.0",
+    "axios": "^1.6.2",
+    "combined-stream": "^1.0.8",
+    "deep-diff": "^0.3.8",
+    "delayed-stream": "^1.0.0",
+    "follow-redirects": "^1.15.3",
+    "form-data": "^4.0.0",
+    "immer": "^10.0.3",
+    "logger": "^0.0.1",
+    "mime-db": "^1.52.0",
+    "mime-types": "^2.1.35",
+    "proxy-from-env": "^1.1.0",
+    "redux": "^4.2.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.2",
+    "regenerator-runtime": "^0.14.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

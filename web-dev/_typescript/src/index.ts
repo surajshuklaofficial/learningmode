@@ -1,9 +1,7 @@
-console.log("hi");
+type Sum<T extends number> = (num1: T, num2: T) => T;
 
-let firstName: string = "Dylan";
-
-console.log(firstName);
-
-for (let i = 0; i < 7; i++) {
-    console.log(i);
+const sum : Sum<string> = function(num1, num2){
+    return  num1 + num2;
 }
+
+console.log(sum("suraj", "shukla"));

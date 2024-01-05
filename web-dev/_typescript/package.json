@@ -1,16 +1,8 @@
 {
-  "name": "_typescript",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.ts",
-    "build": "tsc"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "typescript": "^5.3.2"
+    "typescript": "^5.3.3"
+  },
+  "scripts": {
+    "dev": "npx tsc && node build/index.js"
   }
 }

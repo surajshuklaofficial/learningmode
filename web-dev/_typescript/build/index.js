@@ -1,7 +1,5 @@
 "use strict";
-console.log("hi");
-let firstName = "Dylan";
-console.log(firstName);
-for (let i = 0; i < 7; i++) {
-    console.log(i);
-}
+const sum = function (num1, num2) {
+    return num1 + num2;
+};
+console.log(sum(4, 5));
