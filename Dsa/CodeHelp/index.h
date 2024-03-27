@@ -20,3 +20,11 @@ void printArray(char arr[]) {
 
     cout << endl << "printing done!" << endl;
 }
+
+void printVec(vector<int> arr) {
+    for (auto i: arr) {
+        cout << i << " ";
+    }
+
+    cout << endl;
+}
