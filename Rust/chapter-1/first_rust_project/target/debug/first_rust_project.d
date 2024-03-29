@@ -1,0 +1,1 @@
+C:\Users\surajshukla\Desktop\learningmode\Rust\chapter-1\first_rust_project\target\debug\first_rust_project.exe: C:\Users\surajshukla\Desktop\learningmode\Rust\chapter-1\first_rust_project\src\main.rs
